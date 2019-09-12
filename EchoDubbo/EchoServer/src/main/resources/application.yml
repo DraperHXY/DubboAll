@@ -1,0 +1,15 @@
+server:
+  port: 8091
+dubbo:
+  application:
+    name: EchoServer
+  registry:
+    address: 47.99.62.134:2181,47.99.62.134:2182,47.99.62.134:2183
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 12345
+  monitor:
+    protocol: registry
+  scan:
+    base-packages: com.draper.service.impl
